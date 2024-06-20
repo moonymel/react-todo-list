@@ -1,3 +1,12 @@
+// VARIABILI
+
+const user = {
+  name: 'Melissa',
+  id: 1
+}
+
+// FUNZIONI
+
 function boldify(str) {
   return <strong>{str}</strong>;
 }
@@ -19,7 +28,7 @@ export default function App() {
   return (
     <div>
       <AppTitle />
-      <AppMessage name="Melissa" id="1" />
+      <AppMessage {...user} />
     </div>
   );
 }
